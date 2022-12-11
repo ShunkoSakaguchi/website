@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="myschool.css">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <div class="header">     
+      <nav class="navbar">
+        <h2 class="logo">My SCHOOL</h2>
+        <ul class="menu">
+          <li><a href="target2.html">HOME</a></li>
+          <li><a href="About me1.html">ABOUT ME</a></li>
+          <li><a href="#">HOBBY</a></li>
+          <li><a href="myschool.html">SCHOOL</a></li>
+        </ul>
+    </nav>
+    <script>
+        const menu = document.querySelector(".menu");
+        const navbar = document.querySelector(".navbar");
+        window.addEventListener("scroll", () => {
+          if (window.pageYOffset >= menu.offsetTop) {
+            //stickyクラスをnavbarに付与する。
+            navbar.classList.add("sticky");
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        });
+      </script>
+        <!--section01-->
+    <section class="sec-01">
+      <div class="container">
+          <h2 class="main-title">Primary School</h2>
+          <div class="content">
+              <div class="image">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Japanese_School_of_Beijing_%2820201206164456%29.jpg" alt="">
+          </div>
+          <div class="text-box">
+              <h3>JSB(Japanase School of Beijing</h3>
+              <p>JSB is riterally located in Beijing. This school is combing primary school and junior high school and I commuted this school from 1~7</p>
+          </div>
+      </div>
+      <div class="media-icons">
+          <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/shunnnkkoo" class="icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!--section02-->
+  <section class="sec-02">
+      <div class="container">
+          <h3 class="section-title">Junior High School</h3>
+          <div class="content">
+              <div class="image">
+                  <img src="https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_2/v1547086964/isbeijing/ynhjadg8i7vo9gm71u8b/DSC_6810.jpg" alt="">
+              </div>
+              <div class="info">
+                  <h4 class="info-title">ISB(International School of Beijing</h4>
+                  <p>ISB is the greatest international school in Beijing which is kind of bunch of countries people in this school I commute this schoo from 6~7 and take the a hour of car  </p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!--section03-->
+  <section class="sec-03">
+      <div class="container">
+          <h3 class="section-titile">Hirakata Junior High School</h3>
+          <div class="content">
+              <div class="media-info">
+                  <li>
+                      <a href="https://jsb-cn.com/">JSB</a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/shunnnkkoo"><i class="fab fa-instagram"></i> Instagram</a>
+                    </li>
+                    <li>
+                      <a href="https://www.isb.cn/">ISB</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-youtube"></i> Youtube</a>
+                    </li>
+                    <li>
+                        <a href="https://www.city.hirakata.osaka.jp/0000008012.html">Hirakata JHS</a>
+                      </li>
+              </div>
+              <div class="image">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Hirakata_city_Hirakata_junior_high_school.jpg" alt="">
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+
+    ScrollReveal({
+      reset: true,
+      distance: "60px",
+      duration: 2000,
+      delay: 200 ,
+    });
+
+    ScrollReveal().reveal(".main-title, .section-title", {
+      delay: 200,
+      origin: "left",
+    });
+    ScrollReveal().reveal(".sec-01 .image, .info", {
+      delay: 600,
+      origin: "bottom",
+    });
+    ScrollReveal().reveal(".text-box", {
+      delay: 700,
+      origin: "left",
+    });
+    ScrollReveal().reveal(".media-icons i", {
+      delay: 500,
+      origin: "bottom",
+      interval: 200,
+    });
+    ScrollReveal().reveal(".sec-02 .image, .sec-03 .image", {
+      delay: 500,
+      origin: "top",
+    });
+    ScrollReveal().reveal(".media-info li", {
+      delay: 500,
+      origin: "left",
+      interval: 200,
+    });
+  </script>
+  </body>
+  </html>
+  
